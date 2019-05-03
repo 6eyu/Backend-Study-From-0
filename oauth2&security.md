@@ -2,8 +2,8 @@
 
 Authentication 和 Authorization 服务由**3**部分构成。
 1. Class **SecurityConfig** (extends **WebSecurityConfigurerAdapter**) 
-    > 依赖于Spring Security
-    > 作用：**认证** Authentication
+    <br>依赖于Spring Security
+    <br>作用：**认证** Authentication
     - 过滤URL请求 
     - 获取User信息&验证信息
 
