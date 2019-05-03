@@ -8,13 +8,13 @@ Authentication 和 Authorization 服务由**3**部分构成。
     - 获取User信息&验证信息
 
 2. Class **ResourceServerConfig** (extends **ResourceServerConfigurerAdapter**)
-    * 依赖于Oauth2
-    * 作用：
+    <br>依赖于Oauth2
+    <br>作用：
     - 过滤URL请求 (#### ?与securityconfig 的区别 有待进一步研究 ####)
 
 3. Class **AuthorizationServerConfig** (extends **AuthorizationServerConfigurerAdapter**)
-    * 依赖于Oauth2
-    * 作用：**授权** Authorization
+    <br>依赖于Oauth2
+    <br>作用：**授权** Authorization
     - 检测终端(client)信息: APP, WebApp等
     - 发放&储存令牌(token): JWT等
 
