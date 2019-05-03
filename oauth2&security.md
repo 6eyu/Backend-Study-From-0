@@ -117,7 +117,7 @@ public class AuthenticationConfig extends AuthorizationServerConfigurerAdapter {
 }
 ```
 
-PasswordEncoder方式：
+### PasswordEncoder方式：
 > Oauth2 默认为 DelegatingPasswordEncoder() 可以解析 有前缀的 Hash 值 如：{BCrypt}
 > 有 2 种方式
 > 1. 服务内全局设置: 
