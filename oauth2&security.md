@@ -105,7 +105,7 @@ public class AuthenticationConfig extends AuthorizationServerConfigurerAdapter {
     @Override
     public void configure(AuthorizationServerSecurityConfigurer security) throws Exception {
         security.tokenKeyAccess("permitAll()")
-                .checkTokenAccess("permitAll()");
+                .checkTokenAccess("permitAll()");//设置permitAll后可以用过postman调通URI: "/oauth/check_token"
     }
 
     @Override
