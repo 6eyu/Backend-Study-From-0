@@ -120,14 +120,17 @@ public class AuthenticationConfig extends AuthorizationServerConfigurerAdapter {
 PasswordEncoder方式：
 > Oauth2 默认为 DelegatingPasswordEncoder() 可以解析 有前缀的 Hash 值 如：{BCrypt}
 > 有 2 种方式
-> 1. 此为全局设置，Users (Password) 和 Clients (secret) 都可以调用，
+> 1. 服务内全局设置: 
+    <br>Users (Password) <SecurityConfig.java> 和 Clients (secret) <AuthorizationServerConfig.java>都可以通过@Autowired调用
 ```
     @Bean
     PasswordEncoder passwordEncoder(){
         return PasswordEncoderFactories.createDelegatingPasswordEncoder(); //可修改指定编码器 如 new BCryptPasswordEncoder()
     }
 ```
-> 2. 注：如果使用此方法，Clients 还是需要用方法(1) 声明 Encoder
+> 2. 单独设置解码器
+    <br>注：如果使用此方法，Clients <AuthorizationServerConfig.java> 还是需要用方法(1) Bean 声明 Encoder, 
+    <br>因为无法在client中使用passwordEncoder()方法注入指定解码, 也许可以，但是我没有实验成功：）
 ```
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
