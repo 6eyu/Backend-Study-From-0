@@ -123,7 +123,7 @@ PasswordEncoder方式：
 ```
     @Bean
     PasswordEncoder passwordEncoder(){
-        return PasswordEncoderFactories.createDelegatingPasswordEncoder();
+        return PasswordEncoderFactories.createDelegatingPasswordEncoder(); //可修改指定编码器 如 new BCryptPasswordEncoder()
     }
 ```
 > 2. 注：如果使用此方法，Clients 还是需要用方法(1) 声明 Encoder
