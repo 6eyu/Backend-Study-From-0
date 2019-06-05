@@ -2,4 +2,4 @@
 
 
 
-![](https://github.com/6eyu/Study-Backend/tree/master/images/bg2017051503.jpg)
+![](https://raw.githubusercontent.com/6eyu/Study-Backend/master/images/bg2017051503.jpg)
