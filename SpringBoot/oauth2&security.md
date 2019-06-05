@@ -10,7 +10,7 @@ Authentication 和 Authorization 服务由**3**部分构成。
 2. Class **ResourceServerConfig** (extends **ResourceServerConfigurerAdapter**)
     <br>依赖于Oauth2
     <br>作用：
-    - 过滤URL请求 (#### ?与securityconfig 的区别 有待进一步研究 ####)
+    - 过滤URL请求 **(#### ?与securityconfig 的区别 有待进一步研究 ####)**
     - 设置访问ROLE
 
 3. Class **AuthorizationServerConfig** (extends **AuthorizationServerConfigurerAdapter**)
