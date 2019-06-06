@@ -19,3 +19,4 @@
 
 ##### Others:
 - **Redis**
+- **Lucene**        *参考[初识 Lucene](https://www.ibm.com/developerworks/cn/java/j-lo-lucene1/index.html)*
