@@ -2,7 +2,7 @@
 为了方便**webapp**前后端间通信, **RESTFul API**成为统一API设计风格.
 
 #### 重要规则:
-在 **url** 只能用名词描述. 所有请求动作必须使用 **Http Method**
+在 **url** 中只能用名词描述. 所有请求**动作**必须使用 **Http Method**
 
 #### Http Method:
     GET（SELECT）：从服务器取出资源（一项或多项)
@@ -15,6 +15,6 @@
 
 
 ## HTTP vs WS
-前后端建立长期实时通信时 *(如后端推送警报)*, 需要使用WebSocket, 这是采用ws进行通信.
+前后端建立长期实时通信时 *(如后端推送警报)*, 需要使用WebSocket, 其采用了ws进行通信.
 
 ![](https://raw.githubusercontent.com/6eyu/Study-Backend/master/images/bg2017051503.jpg)
