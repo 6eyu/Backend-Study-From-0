@@ -111,7 +111,7 @@ app register --name time-processor --type processor --uri maven://org.baeldung.s
  
 app register --name logging-sink --type sink --uri maven://org.baeldung.spring.cloud:spring-data-flow-logging-sink:jar:0.0.1-SNAPSHOT
 ```
-- **创建&部署 stream**
+- **创建&部署 pipeline**
 
 ```
 stream create --name time-to-log --definition 'time-source | time-processor | logging-sink'
